@@ -15,6 +15,7 @@ const SignUp = () => {
 
     try {
       setLoading(true);
+      setError(false)
 
       const res = await fetch("/api/auth/signup", {
         method: "POST",
